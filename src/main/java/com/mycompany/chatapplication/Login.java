@@ -5,6 +5,7 @@ package com.mycompany.chatapplication;
  *Login class handles user registration and authentication.
  * This class validates username, password, and cell phone number 
  * and provides login functionality for the QuikChat Application.
+ * Note: Code structure and debugging assisted by [5].
  * 
  * References:
  * [1] B.Hamill, "Regular expression matching E.164 formatted phone numbers,"
@@ -12,7 +13,7 @@ package com.mycompany.chatapplication;
  * https://stackflow.com/questions/6478875/regular-expression-matching-e-164-formatted-phone-numbers
  * [Accessed: 16 April 2026].
  * 
- * [2] J. Farrell, Java Programming, 1oth ed. Boston, MA: Cengage Learning, 2019.
+ * [2] J. Farrell, Java Programming, 10th ed. Boston, MA: Cengage Learning, 2019.
  * 
  * [3] O. J. Dahl, E. W. Dijkstra, and C. A. R.  Hoare, "Object-Oriented Programming"
  *     in Structured Programming. London, Uk: Academic Press 1972, pp.1-82.
@@ -20,6 +21,10 @@ package com.mycompany.chatapplication;
  * [4] Oracle, "Class Character,"Java SE Documentation, 2023. [Online]. Available:
  *     https://docs.oracle.com/en/java/api/java.base/java/lang/Character.html
  *     [Accessed: 16 April 2026].
+ * 
+ * [5] Anthropic, "Claude (claude-sonnet-4-6) [Large language model]," Anthropic, 2026. 
+       [Online]. Available: https://www.anthropic.com 
+       [Accessed: 16 April 2026].
  * 
  * @author Neil Anele Ntini ST10176291
  */

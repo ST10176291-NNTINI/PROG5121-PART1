@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * LoginTest class contains unit tests for the login class. 
  * Tests verify the correct functionality of username validation, 
  * password complexity, cell phone validation, and login authentication. 
+ * Note: Code structure and debugging assisted by [5].
  * 
  * References:
  * [1] J. Farrel, Java  Programming, 10th ed. Boston, MA: Cengage learning,2019.
@@ -23,6 +24,10 @@ import static org.junit.jupiter.api.Assertions.*;
  *     Stack Overflow, 2011. [Online]. Available:
  *     https://stackoverflow.com/questions/6478875/regular-expression-matching-e-164-formatted-phone-numbers
  *     [Accessed: 16 April 2026].
+ * 
+ * [5] Anthropic, "Claude (claude-sonnet-4-6) [Large language model]," Anthropic, 2026. 
+       [Online]. Available: https://www.anthropic.com 
+       [Accessed: 16 April 2026].
  *     
  * @author Neil Anele Ntini ST10176291
  */

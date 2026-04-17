@@ -6,6 +6,7 @@ import java.util.Scanner;
 /**
  * ChatApplication is the main entry point for the QuickChat application.
  * This class handles user input for registration and login functionality.
+ * Note: Code structure and debugging assisted by [3].
  * 
  * References:
  * [1] J. Farell, Java Programming, 10th ed. Boston, MA: Cengage Learning. 2019.
@@ -13,6 +14,9 @@ import java.util.Scanner;
  * [2] Oracle, "Class Scanner," Java SE Documentation, 2023. [Online]. Available;
  *     https://docs.oracle.com/en/java/api/java.base/java/lang/String.html
  *     [Accessed: 16 April 2026] 
+ * [3] Anthropic, "Claude (claude-sonnet-4-6) [Large language model]," Anthropic, 2026. 
+       [Online]. Available: https://www.anthropic.com 
+       [Accessed: 16 April 2026].
  * 
  * @author Neil Anele Ntini ST10176291
  */
