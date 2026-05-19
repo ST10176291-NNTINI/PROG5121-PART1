@@ -3,7 +3,7 @@
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/virtuousbeardedbro/NetBeansProjects/ChatApplication/target/test-classes:/Users/virtuousbeardedbro/NetBeansProjects/ChatApplication/target/classes:/Users/virtuousbeardedbro/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/virtuousbeardedbro/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
+    <property name="java.class.path" value="/Users/virtuousbeardedbro/NetBeansProjects/ChatApplication/target/test-classes:/Users/virtuousbeardedbro/NetBeansProjects/ChatApplication/target/classes:/Users/virtuousbeardedbro/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/virtuousbeardedbro/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/json/json/20231013/json-20231013.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
@@ -12,10 +12,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-25.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/virtuousbeardedbro/NetBeansProjects/ChatApplication/target/surefire/surefirebooter-20260416050217512_3.jar /Users/virtuousbeardedbro/NetBeansProjects/ChatApplication/target/surefire 2026-04-16T05-02-16_056-jvmRun1 surefire-20260416050217512_1tmp surefire_0-20260416050217512_2tmp"/>
+    <property name="sun.java.command" value="/Users/virtuousbeardedbro/NetBeansProjects/ChatApplication/target/surefire/surefirebooter-20260424065911010_3.jar /Users/virtuousbeardedbro/NetBeansProjects/ChatApplication/target/surefire 2026-04-24T06-59-10_978-jvmRun1 surefire-20260424065911010_1tmp surefire_0-20260424065911010_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/virtuousbeardedbro/NetBeansProjects/ChatApplication/target/test-classes:/Users/virtuousbeardedbro/NetBeansProjects/ChatApplication/target/classes:/Users/virtuousbeardedbro/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/virtuousbeardedbro/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/virtuousbeardedbro/NetBeansProjects/ChatApplication/target/test-classes:/Users/virtuousbeardedbro/NetBeansProjects/ChatApplication/target/classes:/Users/virtuousbeardedbro/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/virtuousbeardedbro/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:/Users/virtuousbeardedbro/.m2/repository/org/json/json/20231013/json-20231013.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/virtuousbeardedbro"/>
     <property name="user.language" value="en"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/virtuousbeardedbro/NetBeansProjects/ChatApplication/target/surefire/surefirebooter-20260416050217512_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/virtuousbeardedbro/NetBeansProjects/ChatApplication/target/surefire/surefirebooter-20260424065911010_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="25.0.2+10-LTS-69"/>
@@ -58,12 +58,12 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="testPasswordDoesNotMeetComplexity" classname="com.mycompany.chatapplication.LoginTest" time="0.007"/>
-  <testcase name="testCellPhoneIncorrectlyFormatted" classname="com.mycompany.chatapplication.LoginTest" time="0.0"/>
-  <testcase name="testUsernameIncorrectlyFormatted" classname="com.mycompany.chatapplication.LoginTest" time="0.001"/>
+  <testcase name="testPasswordDoesNotMeetComplexity" classname="com.mycompany.chatapplication.LoginTest" time="0.008"/>
+  <testcase name="testCellPhoneIncorrectlyFormatted" classname="com.mycompany.chatapplication.LoginTest" time="0.001"/>
+  <testcase name="testUsernameIncorrectlyFormatted" classname="com.mycompany.chatapplication.LoginTest" time="0.0"/>
   <testcase name="testPasswordMeetsComplexity" classname="com.mycompany.chatapplication.LoginTest" time="0.0"/>
-  <testcase name="testLoginFailed" classname="com.mycompany.chatapplication.LoginTest" time="0.0"/>
-  <testcase name="testCellPhoneCorrectlyFormatted" classname="com.mycompany.chatapplication.LoginTest" time="0.001"/>
-  <testcase name="testLoginSuccessful" classname="com.mycompany.chatapplication.LoginTest" time="0.0"/>
-  <testcase name="testUsernameCorrectlyFormatted" classname="com.mycompany.chatapplication.LoginTest" time="0.001"/>
+  <testcase name="testLoginFailed" classname="com.mycompany.chatapplication.LoginTest" time="0.001"/>
+  <testcase name="testCellPhoneCorrectlyFormatted" classname="com.mycompany.chatapplication.LoginTest" time="0.0"/>
+  <testcase name="testLoginSuccessful" classname="com.mycompany.chatapplication.LoginTest" time="0.001"/>
+  <testcase name="testUsernameCorrectlyFormatted" classname="com.mycompany.chatapplication.LoginTest" time="0.0"/>
 </testsuite>

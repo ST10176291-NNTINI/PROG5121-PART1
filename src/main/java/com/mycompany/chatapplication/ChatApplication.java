@@ -1,82 +1,161 @@
-
 package com.mycompany.chatapplication;
 
 import java.util.Scanner;
 
 /**
  * ChatApplication is the main entry point for the QuickChat application.
- * This class handles user input for registration and login functionality.
- * Note: Code structure and debugging assisted by [3].
- * 
+ * This class handles user input for registration, login and messaging.
+ *
  * References:
- * [1] J. Farell, Java Programming, 10th ed. Boston, MA: Cengage Learning. 2019.
- * 
- * [2] Oracle, "Class Scanner," Java SE Documentation, 2023. [Online]. Available;
+ * [1] J. Farrell, Java Programming, 10th ed. Boston, MA: Cengage Learning, 2019.
+ * [2] Oracle, "Class Scanner," Java SE Documentation, 2023. [Online]. Available:
+ *     https://docs.oracle.com/en/java/api/java.base/java/util/Scanner.html
+ *     [Accessed: 16 April 2026].
+ * [3] Oracle, "Class String," Java SE Documentation, 2023. [Online]. Available:
  *     https://docs.oracle.com/en/java/api/java.base/java/lang/String.html
- *     [Accessed: 16 April 2026] 
- * [3] Anthropic, "Claude (claude-sonnet-4-6) [Large language model]," Anthropic, 2026. 
-       [Online]. Available: https://www.anthropic.com 
-       [Accessed: 16 April 2026].
+ *     [Accessed: 16 April 2026].
+ * [4] Anthropic, "Claude (claude-sonnet-4-6) [Large language model]," Anthropic, 2026.
+ *     [Online]. Available: https://www.anthropic.com [Accessed: 16 April 2026].
+ *
+ * @author virtuousbeardedbro
  * 
- * @author Neil Anele Ntini ST10176291
  */
-
 public class ChatApplication {
-    
-    /**
-     *  Main method - entry point of the QuickChat application.
-     *  Handles user registration and login via console input.
-     *  Input handling adapted [1]
-     *  Scanner usage reference [2] 
-     *  
+
+   /**
+     * Main method - entry point of the QuickChat application.
+     * Handles user registration, login and messaging via console input.
+     *
      * @param args command line arguments (not used)
      */
-
     public static void main(String[] args) {
         // Scanner used to read user input from console [2]
-        Scanner scanner = new Scanner (System.in);
-        
-        System.out.println("===WElcome to Quickchat===");
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("=== Welcome to QuickChat ===");
         System.out.println("Please register to continue.");
-        
-        // Get user details- string handling referenced from [3] 
+
+        // Get user details
         System.out.print("Enter First Name: ");
         String firstName = scanner.nextLine();
-        
+
         System.out.print("Enter Last Name: ");
         String lastName = scanner.nextLine();
-        
-       System.out.print("Enter Username: ");
-       String username = scanner.nextLine();
-       
-       System.out.print("Enter Password: ");
-       String password = scanner.nextLine();
-       
-       System.out.print("Enter Cell Phone Number: ");
-       String cellPhone = scanner.nextLine();
-       
-       // Create Login object- OOP object instantiation adapted from [1]
-       
-       Login login = new Login (firstName, lastName, username, password, cellPhone);
-       
-       // Attempt registration ad display result
-       String registrationResult = login.registerUser();
-       System.out.println(registrationResult);
-       
-       // only allow login if registration was successful [1]
-       if (registrationResult.equals("Registration successful!")){
-           System.out.println("\nPlease login to continue.");
-           
-           System.out.print("Enter Username: ");
-           String enteredUsername = scanner.nextLine();
-           
-           System.out.print("Enter Password: ");
-           String enteredPassword = scanner.nextLine();
-           
-           // return and display  login status 
-           System.out.println(login.returnLoginStatus(enteredUsername, enteredPassword));
-       }
-       //Close scanner to free resources [2]
+
+        System.out.print("Enter Username: ");
+        String username = scanner.nextLine();
+
+        System.out.print("Enter Password: ");
+        String password = scanner.nextLine();
+
+        System.out.print("Enter Cell Phone Number (e.g. +27838968976): ");
+        String cellPhone = scanner.nextLine();
+
+        // Create Login object
+        Login login = new Login(firstName, lastName, username, password, cellPhone);
+
+        // Attempt registration
+        String registrationResult = login.registerUser();
+        System.out.println(registrationResult);
+
+        // Only allow login if registration was successful
+        if (registrationResult.equals("Registration successful!")) {
+            System.out.println("\nPlease login to continue.");
+
+            System.out.print("Enter Username: ");
+            String enteredUsername = scanner.nextLine();
+
+            System.out.print("Enter Password: ");
+            String enteredPassword = scanner.nextLine();
+
+            // Check login status
+            String loginStatus = login.returnLoginStatus(enteredUsername, enteredPassword);
+            System.out.println(loginStatus);
+
+            // Only show menu if login was successful
+            if (loginStatus.startsWith("Welcome")) {
+                
+                // Show welcome message
+                System.out.println("\nWelcome to QuickChat.");
+
+                // Ask user how many messages they want to send
+                System.out.print("How many messages would you like to send? ");
+                int numMessages = Integer.parseInt(scanner.nextLine());
+
+                // Menu loop - runs until user selects quit
+                boolean running = true;
+                while (running) {
+                    // Display menu
+                    System.out.println("\n=== Menu ===");
+                    System.out.println("1) Send Messages");
+                    System.out.println("2) Show recently sent messages");
+                    System.out.println("3) Quit");
+                    System.out.print("Enter your choice: ");
+
+                    int menuChoice = Integer.parseInt(scanner.nextLine());
+
+                    switch (menuChoice) {
+                        case 1:
+                            // Send messages using for loop
+                            for (int i = 0; i < numMessages; i++) {
+                                System.out.println("\n--- Message " + (i + 1) + " of " + numMessages + " ---");
+
+                                // Get recipient number
+                                System.out.print("Enter recipient cell number (e.g. +27838968976): ");
+                                String recipient = scanner.nextLine();
+
+                                // Get message
+                                System.out.print("Enter your message (max 250 characters): ");
+                                String messagePayload = scanner.nextLine();
+
+                                // Check message length
+                                if (messagePayload.length() > 250) {
+                                    System.out.println("Please enter a message of less than 250 characters.");
+                                    i--; // Don't count this as a sent message
+                                    continue;
+                                }
+
+                                // Create message object
+                                Message message = new Message(i, recipient, messagePayload);
+
+                                // Check recipient number
+                                System.out.println(message.checkRecipientCell());
+
+                                // Display message hash
+                                System.out.println("Message Hash: " + message.getMessageHash());
+
+                                // Ask user what to do with message
+                                String result = message.sentMessage(scanner);
+                                System.out.println(result);
+
+                                // Store message in JSON if stored
+                                if (message.getFlag().equals("Stored")) {
+                                    System.out.println(message.storeMessage());
+                                }
+
+                                // Display full message details
+                                System.out.println(message.printMessages());
+                            }
+
+                            // Display total messages sent
+                            System.out.println("\nTotal messages sent: " + new Message(0, "", "a b").returnTotalMessages());
+                            break;
+
+                        case 2:
+                            System.out.println("Coming Soon.");
+                            break;
+
+                        case 3:
+                            running = false;
+                            System.out.println("Goodbye!");
+                            break;
+
+                        default:
+                            System.out.println("Invalid option. Please try again.");
+                    }
+                }
+            }
+        }
         scanner.close();
-     }
+    }
 }

@@ -1,2 +1,4 @@
-com/mycompany/chatapplication/ChatApplication.class
+com/mycompany/chatapplication/Message.class
 com/mycompany/chatapplication/Login.class
+MessageTest.class
+com/mycompany/chatapplication/ChatApplication.class
