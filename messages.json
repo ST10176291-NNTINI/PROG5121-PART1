@@ -1,0 +1,42 @@
+[
+  {
+    "flag": "Stored",
+    "messageIndex": 2,
+    "messagePayload": "Where are you? You are late! I have asked you to be on time.",
+    "recipient": "+27838884567",
+    "messageID": "3737163529",
+    "messageHash": "37:2:WHERETIME"
+  },
+  {
+    "flag": "Stored",
+    "messageIndex": 1,
+    "messagePayload": "Where are you? You are late! Ihave asked you to be on time. ",
+    "recipient": "+27838884567",
+    "messageID": "9357612764",
+    "messageHash": "93:1:WHERETIME"
+  },
+  {
+    "flag": "Stored",
+    "messageIndex": 1,
+    "messagePayload": "Where are you? You are late! I have asked you to be on time.",
+    "recipient": "+27838884567",
+    "messageID": "5641004656",
+    "messageHash": "56:1:WHERETIME"
+  },
+  {
+    "flag": "Stored",
+    "messageIndex": 1,
+    "messagePayload": "Where are you? You are late! I have asked you to be on time. ",
+    "recipient": "+27838884567",
+    "messageID": "1885952514",
+    "messageHash": "18:1:WHERETIME"
+  },
+  {
+    "flag": "Stored",
+    "messageIndex": 1,
+    "messagePayload": "where are you? you are late !",
+    "recipient": "+27838884567",
+    "messageID": "7589362417",
+    "messageHash": "75:1:WHERE"
+  }
+]
