@@ -2,9 +2,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "main", "Part2-SendingMessages" ]
+    branches: [ "main", "Part2-SendingMessages", "Part3-StoreData" ]
   pull_request:
-    branches: [ "main", "Part2-SendingMessages" ]
+    branches: [ "main", "Part2-SendingMessages", "Part3-StoreData" ]
 
 jobs:
   build:
